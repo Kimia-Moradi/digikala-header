@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: iransans;
+    color: #848484;
+    font-size: 13px;
+}
+
+@font-face {
+    font-family: iransans;
+    src: url("fonts/Sansa4fran3.ttf") format("truetype"),
+        url("fonts/Sansa4fran3.eot") format("eot"),
+        url("fonts/Sansa4fran3.woff") format("woff"),
+        url("fonts/Sansa4fran3.woff2") format("woff2");
+}
+
+body {
+    direction: rtl;
+    text-align: right;
+    background-color: #bbe0ff;
+}
+
+header {
+    padding: 10px 5px 115px 5px;
+    background-color: white;
+    height: 110px;
+}
+
+.main-header {
+    float: right;
+    width: 82%;
+    height: 50px;
+    padding: 5px 0;
+}
+
+.logo {
+    float: right;
+    margin: 0 0 0 10px;
+    width: 120px;
+    height: 50px;
+}
+
+.search {
+    float: right;
+    width: 45%;
+    height: 45px;
+    border: 0;
+    border-radius: 10px;
+    padding: 0 20px;
+    background-color: rgb(241, 242, 244);
+    color: #848484;
+    transition: 400ms;
+}
+
+.search input {
+    border: 0;
+    width: 91%;
+    height: 100%;
+    padding: 0 2px 3px 0;
+    margin-right: 10px;
+    background-color: rgb(241, 242, 244);
+    color: #848484;
+    font-size: 14px;
+    transition: 400ms;
+}
+
+::placeholder {
+    color: #4f6067;
+}
+
+.search input:focus {
+    outline: none;
+    background-color: white;
+}
+
+.search:focus-within {
+    background-color: white;
+    border: 0.2px solid rgb(223, 221, 221);
+    box-shadow: 0 0 5px 1px gray;
+}
+
+
+nav {
+    float: right;
+    width: 100%;
+    height: 60px;
+    padding: 20px 0 0 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+nav > ul > li {
+    float: right;
+    margin: 0 0 0 20px;
+    width: fit-content;
+}
+
+li div.underline {
+    width: 0;
+    margin-right: 100%;
+    margin-top: 16px;
+    transition: 400ms;
+}
+
+li:hover div.underline {
+    width: 100%;
+    margin-right: 0;
+    height: 2px;
+    background-color: red;
+}
+
+i.divider {
+    font-family: sans-serif;
+    font-size: 20px;
+    color: rgb(223, 221, 221);
+    padding: 0;
+}
+
+nav li i {
+    padding: 0 0 0 20px;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #848484;
+    font-size: 13px;
+}
+
+.panel {
+    float: left;
+    width: 18%;
+    height: 50px;
+    padding: 5px 1%;
+}
+
+.panel button {
+    background-color: white;
+    border: 0.2px solid rgb(223, 221, 221);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 900;
+    color: #4f6067;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.panel i.divider {
+    font-size: 25px;
+}
+
+.panel .cart {
+    font-size: 20px;
+    font-weight: 900;
+    color: #4f6067;
+    cursor: pointer;
+    margin: 0 10px;
+
+}
+
+.panel button i {
+    padding-left: 8px;
+    font-size: 13px;
+    font-weight: 900;
+    color: #4f6067;
+
+}
+
+.location {
+    float: left;
+    padding-right: 5px;
+    margin: 10px 0 0 100px;
+    font-size: 13px;
+    font-weight: 900;
+    color: #4f6067;
+
+}
+
+.location i {
+    padding: 0 5px;
+    font-size: 16px;
+    font-weight: 900;
+    color: #4f6067;
+}
+
+.location div.hover {
+    display: none;
+}
+
+.location:hover div.hover {
+    display: initial;
+    position: absolute;
+    top: 116px;
+    left: 180px;
+    padding: 14px;
+    width: fit-content;
+    height: 55px;
+    font-size: 13px;
+    background-color: rgb(72, 73, 92);
+    border: 1.5px solid rgb(31, 30, 38);
+    border-radius: 10px;
+    color: white;
+}
+
+.text-darker {
+    color: #4f6067;
+}
+
+.mega {
+    display: none;
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    top: 110;
+    right: 100;
+    width: 60%;
+    height: 60%;
+    background-color: white;
+
+}
+
+li:hover .mega {
+    display: block;
+}
+
+.category {
+    width: 20%;
+    height: 100%;
+    background-color: rgb(241, 242, 244);
+    color: #848484;
+}
+
+.category > li {
+    width: 100%;
+    height: 8.333%;
+    padding: 13px;
+    background-color: rgb(241, 242, 244);
+    color: #848484;
+}
+
+.category > li:hover {
+    background-color: white;
+}
+
+category > li > a {
+    color: #4f6067;
+}
+
+.category > li:hover > a {
+    color: rgb(253, 65, 65);
+}
+
+.category i {
+    color: #4f6067;
+}
+
+.category > li:hover > a > i {
+    color: rgb(253, 65, 65);
+}
+
+.submenu {
+    display: none;
+    border-radius: 0 0 0 10px;
+    position: absolute;
+    top: 0;
+    right: 20%;
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    padding: 3%;
+    column-width: 280px;
+
+}
+
+.category > li:hover .submenu {
+    display: block;
+
+}
+
+.submenu {
+    text-align: right;
+}
+
+.submenu > a.title {
+    color: rgb(87, 156, 235);
+    padding: 1% 1% 2% 0;
+    width: 100%;
+}
+
+.submenu > a > i {
+    color: rgb(87, 156, 235);
+}
+
+.submenu h1 {
+    color: black;
+    cursor: pointer;
+    margin: 1% 1% 2% 2%;
+    width: 30%;
+    height: 10%;
+
+}
+
+.submenu h1 i {
+    margin-right: 10px;
+}
+
+.submenu h1::before {
+    content: "|";
+    color: red;
+    margin: 5px;
+    font-size: 15;
+}
+
+.submenu h1:hover {
+    color: red;
+}
+
+.submenu h1:hover i {
+    color: red;
+}
+
+.submenu-item {
+    color: #4f6067;
+    padding: 1% 1% 2% 0;
+}
+
+.submenu-item:hover {
+    color: red;
+}
